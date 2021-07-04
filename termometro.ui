@@ -18,8 +18,8 @@
     <normaloff>:/imagenes /Recursos/icono.png</normaloff>:/imagenes /Recursos/icono.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QHBoxLayout" name="horizontalLayout_5">
-    <item>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
        <widget class="QGroupBox" name="groupBox">
@@ -68,7 +68,7 @@
       </item>
      </layout>
     </item>
-    <item>
+    <item row="0" column="1">
      <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
        <widget class="QGroupBox" name="groupBox_2">
@@ -109,7 +109,7 @@
       </item>
      </layout>
     </item>
-    <item>
+    <item row="0" column="2">
      <layout class="QVBoxLayout" name="verticalLayout_7">
       <item>
        <widget class="QGroupBox" name="groupBox_3">

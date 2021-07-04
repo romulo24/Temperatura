@@ -7,27 +7,29 @@ Termometro::Termometro(QWidget *parent)
     , ui(new Ui::Termometro)
 {
     ui->setupUi(this);
+
 //Conexion del Dial(cmdCent)con el metodo de tansforamacion a Fahrenheit
     connect(ui->cmdCent,SIGNAL(valueChanged(int)),
             this, SLOT(cent2Fahr(int)));
 // Conexion del Dial(cmdFahr)con el metodo de tansforamacion a Celsius
-
     connect(ui->cmdFahr, SIGNAL(valueChanged(int)),
             this, SLOT(fahr2Cent(int)));
+
+
  // Conexion del Dial(cmdCent)con el metodo de tansforamacion a Kelvin
     connect(ui->cmdCent,SIGNAL(valueChanged(int)),
             this,SLOT(cent2Kel(int)));
  // Conexion del Dial(cmdCent)con el metodo de tansforamacion a Centigrados
-
    connect(ui->cmdKel, SIGNAL(valueChanged(int)),
             this, SLOT(kel2cent(int)));
 
+
+// Conexion del Dial(cmdFahr)con el metodo de tansforamacion a Kelvin
    connect(ui->cmdFahr, SIGNAL(valueChanged(int)),
             this, SLOT(fahr2Kel(int)));
+// Conexion del Dial(cmdKel)con el metodo de tansforamacion a Fahrenheit
    connect(ui->cmdKel, SIGNAL(valueChanged(int)),
             this, SLOT(kel2Fahr(int)));
-
-
 
 }
 

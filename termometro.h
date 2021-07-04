@@ -16,6 +16,7 @@ public:
     ~Termometro();
 
 public slots:
+
     void cent2Fahr(int);
     void fahr2Cent(int);
 
